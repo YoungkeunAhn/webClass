@@ -1,0 +1,50 @@
+:root {
+  --counseling-color: #999;
+}
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+.container {
+  margin: auto;
+  padding: 8px 16px;
+}
+@media screen and (min-width: 1150px) {
+  .container {
+    width: 1150px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .container {
+    width: 100%;
+  }
+}
+header {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+nav object {
+  width: 100%;
+}
+
+.counseling-box {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 4px;
+}
+.counseling-box span {
+  color: var(--counseling-color);
+  font-weight: 600;
+}
+.counseling-box span + span {
+  margin-left: 8px;
+}
+.counseling-box .counseling {
+  font-size: 1.5rem;
+}
+.counseling-box .counseling-number {
+  font-size: 2.2rem;
+}
