@@ -36,10 +36,10 @@
             </script>
           </ul>
         </div>
-
-        <!-- collapse 메뉴 -->
-        <div>
-          <ul id="collapseBox" class="collapse">
+      </nav>
+      <!-- collapse 메뉴 -->
+      <!-- <div id="collapseBox">
+          <ul class="collapse">
             <li><div>연간일정</div></li>
             <li>
               <div>학원소개</div>
@@ -80,16 +80,18 @@
               <div>온라인결제</div>
             </li>
           </ul>
-        </div>
-      </nav>
-      <div></div>
+        </div> -->
+
+      <div id="imageSlider">
+        <h1>이미지 슬라이드</h1>
+      </div>
     </div>
 
     <!-- 메뉴박스 이벤트 -->
-    <script>
+    <!-- <script>
       const openCollapseBox = () => {
         console.log("mouseover event");
-        document.getElementById("collapseBox").style.height = "100%";
+        document.getElementById("collapseBox").style.height = "200px";
       };
 
       const closeCollapseBox = () => {
@@ -101,7 +103,9 @@
       const collapseBox = document.querySelector(".collapse");
 
       menuBox.addEventListener("mouseover", openCollapseBox);
+      collapseBox.childNodes.addEventListener;
       collapseBox.addEventListener("mouseout", closeCollapseBox);
-    </script>
+    </script> -->
+    <script src="eventScript.js"></script>
   </body>
 </html>

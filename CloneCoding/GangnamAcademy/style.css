@@ -53,9 +53,11 @@ nav object {
 /* 
 * 메뉴
 */
-html {
-  height: 100%;
+nav {
+  background: #fff;
+  position: relative;
 }
+
 ul {
   list-style: none;
   display: flex;
@@ -67,6 +69,7 @@ li {
   text-align: center;
   width: 100%;
 }
+/* 
 .menu-list li {
   color: var(--menu-color);
   font-weight: 600;
@@ -76,21 +79,42 @@ li {
   cursor: pointer;
 }
 #collapseBox {
+  width: "100%";
   overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  top: 12px;
+  background: white;
+}
+#collapseBox:hover {
+  height: "200px";
 }
 .collapse {
   width: 100%;
+  height: 0;
   display: flex;
   font-size: 12px;
-  z-index: 10;
 }
 .collapse:hover {
-  height: "100%";
+  background: #f5f5f5;
 }
+.collapse li {
+  border-left: 1px solid #eee;
+}
+.collapse li:last-child {
+  border-right: 1px solid #eee;
+}
+
 .collapse li div:hover {
   border-bottom: 2px solid darkblue;
   cursor: pointer;
 }
 .collapse li div + div {
   margin-top: 8px;
+} */
+
+#imageSlider {
+  width: 100%;
+  height: 300px;
+  background: green;
 }
