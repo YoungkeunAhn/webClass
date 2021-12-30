@@ -1,5 +1,6 @@
 :root {
   --counseling-color: #999;
+  --menu-color: #797979;
 }
 html {
   font-size: 10px;
@@ -47,4 +48,49 @@ nav object {
 }
 .counseling-box .counseling-number {
   font-size: 2.2rem;
+}
+
+/* 
+* 메뉴
+*/
+html {
+  height: 100%;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+li {
+  text-align: center;
+  width: 100%;
+}
+.menu-list li {
+  color: var(--menu-color);
+  font-weight: 600;
+  font-size: 14px;
+}
+.menu-list li:hover {
+  cursor: pointer;
+}
+#collapseBox {
+  overflow: hidden;
+}
+.collapse {
+  width: 100%;
+  display: flex;
+  font-size: 12px;
+  z-index: 10;
+}
+.collapse:hover {
+  height: "100%";
+}
+.collapse li div:hover {
+  border-bottom: 2px solid darkblue;
+  cursor: pointer;
+}
+.collapse li div + div {
+  margin-top: 8px;
 }
