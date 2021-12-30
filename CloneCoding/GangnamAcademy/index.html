@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./MainPage/QuickSeleckList/style.css" />
+    <link rel="stylesheet" href="./MainPage/NoticeList/style.css" />
     <script src="script.js"></script>
     <title>Document</title>
   </head>
@@ -83,10 +84,11 @@
           </ul>
         </div> -->
 
-      <div id="imageSlider">
+      <div id="imageSlider" style="margin-bottom: 16px">
         <h1>이미지 슬라이드</h1>
       </div>
 
+      <!-- 빠른 선택 메뉴 -->
       <section id="quickSelectSection">
         <div class="quick-select-list">
           <script>
@@ -99,6 +101,28 @@
             );
           </script>
         </div>
+      </section>
+
+      <!-- 게시판 이동 section -->
+      <section id="bbsSelectSection">
+        <div class="left-part">
+          <div class="bbs-select-box">
+            <div class="title-part">
+              <h5 class="bbs-select-title">공지사항</h5>
+              <span class="bbs-select-icon">+</span>
+            </div>
+            <ul>
+              <script>
+                noticeInfo.map((info) =>
+                  document.write(
+                    `<li class=".bbs-select-row"><span>${info.title}</span><span class="post-date">${info.day}</span></li>`
+                  )
+                );
+              </script>
+            </ul>
+          </div>
+        </div>
+        <div class="right-part"></div>
       </section>
     </div>
 

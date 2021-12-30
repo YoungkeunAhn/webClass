@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bbs-select-box">
+      <div class="title-part">
+        <h5 class="bbs-select-title">공지사항</h5>
+        <span class="bbs-select-icon">+</span>
+      </div>
+      <ul>
+        <script>
+          noticeInfo.map((info) =>
+            document.write(
+              `<li class=".bbs-select-row"><span>${info.title}</span><span class="post-date">${info.day}</span></li>`
+            )
+          );
+        </script>
+      </ul>
+    </div>
+  </body>
+</html>

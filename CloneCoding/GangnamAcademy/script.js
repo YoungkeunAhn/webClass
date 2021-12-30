@@ -17,6 +17,15 @@ const quickSelectInfo = [
   { image: "invoice", name: "온라인결제" },
 ];
 
+const noticeInfo = [
+  {
+    title: "국민내일배움카드 대학생 지원대상 확대",
+    day: "2021-11-26",
+  },
+  { title: "10월 및 11월 교육일정", day: "2021-10-12" },
+  { title: "국민내일배움카드 자비부담금 환급!", day: "2021-09-23" },
+];
+
 // const openCollapseBox = () => {
 //   console.log("mouseover event");
 //   document.getElementById("collapseBox").style.height = "100%";
