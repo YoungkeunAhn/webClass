@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>네이버 요약 뉴스</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 1.상단영역 -->
+      <header>
+        <h1>네이버 요약 뉴스 - 정치</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.naver.com">
+                <img
+                  width="20px"
+                  height="20px"
+                  src="https://mimgnews.pstatic.net/image/upload/office_logo/003/2018/01/24/logo_003_38_20180124113224.png"
+                  alt="naver logo"
+                />
+              </a>
+            </li>
+            <li><a href="sub1/subPage.html">정치</a></li>
+            <li><a href="sub2/subPage.html">경제</a></li>
+            <li><a href="sub3/subPage.html">사회</a></li>
+            <li><a href="sub4/subPage.html">IT/과학</a></li>
+            <li><a href="sub5/subPage.html">TV/연예</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- 2.메인영역 -->
+      <main>
+        <div>
+          <div class="news-title-part">
+            <img
+              src="https://tombap8.github.io/KITA-FED212/001.HTML%ED%95%99%EC%8A%B5/001.Info_PJ/images/atp1.png"
+              alt="news logo"
+            />
+            <script>
+              document.write(`<h2>${newsTitle}</h2>`);
+            </script>
+          </div>
+          <div class="news-article-part">
+            <!-- 첫번째 이미지 -->
+            <figure>
+              <script>
+                document.write(`<img
+                src="${newsImageInfo[0].image}"
+                alt="news image"
+              />
+              <figcaption>${newsImageInfo[0].caption}</figcaption>
+              `);
+              </script>
+            </figure>
+            <div class="news-text">
+              <script>
+                document.write(`${newsContent1}`);
+              </script>
+            </div>
+
+            <!-- 두번째 이미지 -->
+            <figure>
+              <script>
+                document.write(`<img
+                src="${newsImageInfo[1].image}"
+                alt="news image"
+              />
+              <figcaption>${newsImageInfo[1].caption}</figcaption>
+              `);
+              </script>
+            </figure>
+            <div class="news-text">
+              <script>
+                document.write(`${newsContent1}`);
+              </script>
+            </div>
+            <span class="news-reporter">박대로 기자(daero@newsis.com)</span>
+          </div>
+          <div class="news-footer">
+            <a
+              href="https://news.naver.com/main/read.naver?mode=LS2D&mid=shm&sid1=100&sid2=267&oid=003&aid=0010918696"
+            >
+              <span>원본기사</span>
+            </a>
+          </div>
+        </div>
+      </main>
+      <!-- 3.하단영역 -->
+      <footer>
+        <div>서울시 강남구 대호빌딜 8층</div>
+        <div>대표 : Tom Brace Parker</div>
+        <div>전화 : 010-1111-2222</div>
+      </footer>
+    </div>
+  </body>
+</html>

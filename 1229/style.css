@@ -3,7 +3,9 @@
   --menu-text-color: #ff0b7d;
   --header-color: #0c9400;
 }
-
+a {
+  text-decoration: none;
+}
 .container {
   margin: auto;
   max-width: 750px;
