@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./MainPage/QuickSeleckList/style.css" />
     <script src="script.js"></script>
     <title>Document</title>
   </head>
@@ -85,6 +86,20 @@
       <div id="imageSlider">
         <h1>이미지 슬라이드</h1>
       </div>
+
+      <section id="quickSelectSection">
+        <div class="quick-select-list">
+          <script>
+            quickSelectInfo.map((menuInfo) =>
+              document.write(`
+          <div class="quick-select-box">
+            <img class="menu-image" src ="./images/${menuInfo.image}.png" alt="${menuInfo.name} icon image" width="50px" height="50px"/>
+            <span class="menu-name">${menuInfo.name}</span>
+            </div>`)
+            );
+          </script>
+        </div>
+      </section>
     </div>
 
     <!-- 메뉴박스 이벤트 -->

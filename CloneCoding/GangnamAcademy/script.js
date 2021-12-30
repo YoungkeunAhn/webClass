@@ -10,6 +10,13 @@ const menuList = [
   "상담센터",
 ];
 
+const quickSelectInfo = [
+  { image: "calendar", name: "이벤트" },
+  { image: "calculator", name: "수강료조회" },
+  { image: "question", name: "온라인상담" },
+  { image: "invoice", name: "온라인결제" },
+];
+
 // const openCollapseBox = () => {
 //   console.log("mouseover event");
 //   document.getElementById("collapseBox").style.height = "100%";
