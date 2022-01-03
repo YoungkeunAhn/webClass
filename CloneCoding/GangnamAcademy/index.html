@@ -121,6 +121,21 @@
               </script>
             </ul>
           </div>
+          <div class="bbs-select-box">
+            <div class="title-part">
+              <h5 class="bbs-select-title">수강후기</h5>
+              <span class="bbs-select-icon">+</span>
+            </div>
+            <ul>
+              <script>
+                reviewInfo.map((info) =>
+                  document.write(
+                    `<li class="review-bbs-row"><div class="avatar"><img src="${info.avatar}" alt="avatar" width="100%" height="100%" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM4TfipskFLoycix3JSNW7DbUIkzdJoNsk6m4XpVtEunqZGil1nwWeZlhsBzbUqF_AdA0&usqp=CAU'"/></div><span class="review-text-box">${info.review}</span></li>`
+                  )
+                );
+              </script>
+            </ul>
+          </div>
         </div>
         <div class="right-part"></div>
       </section>
