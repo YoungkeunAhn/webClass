@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const reviewInfo = [
+        {
+          avatar: "",
+          name: "쿠크르삥뽕",
+          review:
+            "선생님을 알기 전 초보자인 저에게 딱 맞는 과정을 찾는 것이 쉬운 일은 아니었습니다. 그래서 수료를 끝낸 지금, 선생님의 과정은 처음부터 끝까지 믿고 따라갈만 하다고 자신있게 말씀드릴 수 있습니다. 두 달 동안 단 한번도 지친모습 보이지 않으시며 훈련생들을 책임감있게 잘 이끌어주신 선생님께 진심으로 감사를 표합니다.",
+        },
+        {
+          avatar: "",
+          name: "어쩔티비",
+          review: "다들 너무 친절하시고 , 수업 퀄리티도 좋고, 훌륭합니다.",
+        },
+      ];
+    </script>
+    <div class="bbs-select-box">
+      <div class="title-part">
+        <h5 class="bbs-select-title">수강후기</h5>
+        <span class="bbs-select-icon">+</span>
+      </div>
+      <ul>
+        <script>
+          reviewInfo.map((info) =>
+            document.write(
+              `<li class="review-bbs-row"><div class="avatar"><img src="${info.avatar}" alt="avatar" width="100%" height="100%" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM4TfipskFLoycix3JSNW7DbUIkzdJoNsk6m4XpVtEunqZGil1nwWeZlhsBzbUqF_AdA0&usqp=CAU'"/></div><span class="review-text-box">${info.review}</span></li>`
+            )
+          );
+        </script>
+      </ul>
+    </div>
+  </body>
+</html>

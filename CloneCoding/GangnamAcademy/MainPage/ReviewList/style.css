@@ -31,20 +31,6 @@
 .bbs-select-box ul li {
   text-align: left;
 }
-.bbs-select-box ul li::before {
-  content: "· ";
-}
-
-.post-date {
-  color: #666;
-  float: right;
-  min-width: 85px;
-}
-.bbs-select-box + .bbs-select-box {
-  margin-top: 16px;
-}
-
-/* 리뷰박스 스타일 통합 */
 .review-bbs-row {
   display: flex;
   flex-wrap: nowrap;
