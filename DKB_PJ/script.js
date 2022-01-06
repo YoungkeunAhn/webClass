@@ -1,4 +1,4 @@
-const topeMenu = [
+const topMenu = [
   "프로그램 소개",
   "미리보기",
   "동영상",
@@ -9,7 +9,7 @@ const topeMenu = [
 ];
 
 const sin_info = {
-  name: "도깨비(김신)",
+  name: "도깨비(김신), 939세",
   nameImage: "./images/name_sin.png",
   nameImage2: "./images/name2_sin.png",
   image: "./images/img_sin.png",
@@ -23,7 +23,7 @@ const sin_info = {
 };
 
 const ji_info = {
-  name: "지은탁",
+  name: "지은탁, 19세",
   nameImage: "./images/name_ji.png",
   nameImage2: "./images/name2_ji.png",
   image: "./images/img_ji.png",
@@ -35,7 +35,7 @@ const ji_info = {
 };
 
 const ju_info = {
-  name: "저승사자",
+  name: "저승사자, 30대 후반 추정",
   nameImage: "./images/name_ju.png",
   nameImage2: "./images/name2_ju.png",
   image: "./images/img_ju.png",
@@ -49,7 +49,7 @@ const ju_info = {
 };
 
 const sun_info = {
-  name: "써니",
+  name: "써니, 20대 중후반",
   nameImage: "./images/name_sun.png",
   nameImage2: "./images/name2_sun.png",
   image: "./images/img_sun.png",
@@ -59,3 +59,14 @@ const sun_info = {
 <p>그 남자, 저승사자를 처음 만난 건 갖고 싶은 반지를 발견했을 때였다. 그는 그녀에게 양보하지 않은 최초의 남자였다. 첫눈에 반했다고 넘겨짚기엔 너무, 슬픈 눈이었다. 시계며 차림새만 대충 훑어도 연봉 1억에 딱 봐도 연애 못해본 모태솔로인 줄만 알았는데, 만날수록 이상한 남자다. 두문불출하기 일쑤고 직업, 나이, 과거사 그 무엇도 알려주지 않는다. 처음엔 그저 잘생긴 호구로 생각했는데, 그 슬펐던 눈이 자꾸 눈에 밟힌다. 동정은 특기가 아닌데도.</p>
 `,
 };
+
+const cardInfo = [sin_info, ji_info, ju_info, sun_info];
+
+const footerMenu = [
+  "법적고지",
+  "영상정보처리기기운영/관리방침",
+  "이메일무단수집거부",
+  "사이버감사실",
+  "찾아오시는길",
+  "개인정보처리방침",
+];

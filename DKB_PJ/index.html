@@ -1,21 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="./script.js"></script>
-    <title>쓸쓸하고 찬란하신 도깨비</title>
+    <script src="script.js"></script>
+    <title>쓸쓸하고 찬란하신(神) 도깨비</title>
   </head>
   <body>
     <header>
       <img src="./images/tvnlogo2.png" alt="tvn logo image" />
+      <nav>
+        <ul>
+          <script>
+            topMenu.map((menu) => {
+              document.write(`<li>${menu}</li>`);
+            });
+          </script>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <ul></ul>
-    </nav>
-    <main></main>
-    <footer></footer>
+
+    <main>
+      <div class="card-list-box">
+        <script>
+          cardInfo.map((info) => {
+            document.write(`
+          <div class="card">
+            <div class="thumbnail">
+              <img class="thumbnail-image" src="${info.image}" alt="card image" />
+              <img id="thumbnailName" src="${info.nameImage2}" alt="thumbnail name image" />
+            </div>
+            <div class="text-part">
+              <h4>${info.name}</h4>
+              <div>${info.text}</div>
+            </div>
+          </div>
+          `);
+          });
+        </script>
+      </div>
+    </main>
+    <footer>
+      <ul class="footer-menu">
+        <script>
+          footerMenu.map((menu) => {
+            document.write(`<li>${menu}</li>`);
+          });
+        </script>
+      </ul>
+      <ul class="address-box">
+        <li>(주)씨제이이엔엠 CJ ENM 대표이사 강호성, 허민호</li>
+        <li>
+          주소 (03926) 서울시 마포구 상암산로 66 사업자 등록번호 106-81-51510
+          개인정보보호책임자 김재환
+        </li>
+        <li>© CJ ENM. All Rights Reserved.</li>
+      </ul>
+      <img src="./images/blogo.png" alt="footer logo image" />
+    </footer>
   </body>
 </html>

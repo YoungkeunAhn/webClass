@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@400;700;800&family=Roboto:wght@100&display=swap");
+
+html {
+  font-size: 10px;
+}
+body {
+  background: url("	https://tombap8.github.io/KITA-FED212/001.HTML%ED%95%99%EC%8A%B5/003.DKB_PJ/images/bg_logo_a_01.png")
+      no-repeat fixed 10% 30%/10%,
+    url(./images/bg_img.jpg) no-repeat fixed center/cover;
+  padding: 0;
+  margin: 0;
+
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  background: #fff;
+  padding-top: 16px;
+  margin: 0;
+
+  border-bottom: 1px solid #eee;
+}
+header img {
+  width: 100px;
+}
+
+nav {
+  margin: 8px auto 0 auto;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+nav li {
+  padding: 16px 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+nav li + li {
+  margin-left: 32px;
+}
+nav li:hover {
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-bottom: 4px solid red;
+}
+nav li::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 800px;
+}
+.card-list-box {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 80px;
+}
+.card {
+  width: 25%;
+}
+.card + .card {
+  margin-left: 24px;
+}
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+#thumbnailName {
+  position: absolute;
+  bottom: 10px;
+}
+.thumbnail-image {
+  width: 100%;
+}
+
+.card .text-part {
+  height: 0;
+  overflow: hidden;
+}
+footer {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.footer-menu li + li {
+  margin-left: 16px;
+}
+.footer-menu li:hover {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.address-box {
+  border: 5px double black;
+  display: block;
+  padding: 16px;
+  min-width: 720px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.address-box li + li {
+  margin-top: 8px;
+}
