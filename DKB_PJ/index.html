@@ -17,12 +17,71 @@
     <header>
       <img src="./images/tvnlogo2.png" alt="tvn logo image" />
       <nav>
-        <ul>
+        <!-- <ul>
           <script>
-            topMenu.map((menu) => {
-              document.write(`<li>${menu}</li>`);
+            topMenu.map((menu, idx) => {
+              document.write(
+                `<li class="top-menu-item menu${idx}"><span>${menu.title}</span>
+                  <ol class="drop-menu">
+                    <li><span>프로그램 소개</span></li>
+                    <li><span>인물소개</span></li>
+                    <li><span>인물관계도</span></li>
+                  </ol>
+                </li>`
+              );
             });
           </script>
+        </ul> -->
+        <ul>
+          <li>
+            <span href="#">프로그램 소개</span>
+            <!-- 서브메뉴 -->
+            <ol class="smenu">
+              <li>
+                <span href="#">프로그램 소개</span>
+              </li>
+              <li>
+                <span href="#">인물소개</span>
+              </li>
+              <li>
+                <span href="#">인물관계도</span>
+              </li>
+            </ol>
+          </li>
+          <li><span href="#">미리보기</span></li>
+          <li>
+            <span href="#">동영상</span>
+            <!-- 서브메뉴 -->
+            <ol class="smenu">
+              <li>
+                <span href="#">클립영상</span>
+              </li>
+              <li>
+                <span href="#">다시보기</span>
+              </li>
+              <li>
+                <span href="#">예고편</span>
+              </li>
+              <li>
+                <span href="#">스페셜</span>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <span href="#">사진첩</span>
+            <!-- 서브메뉴 -->
+            <ol class="smenu">
+              <li>
+                <span href="#">현장 포토</span>
+              </li>
+              <li>
+                <span href="#">대표 포스터</span>
+              </li>
+            </ol>
+          </li>
+          <li><span href="#">OST</span></li>
+          <li><span href="#">시청자 게시판</span></li>
+          <li><span href="#">[심리 테스트]</span></li>
         </ul>
       </nav>
     </header>
