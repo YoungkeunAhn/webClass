@@ -9,6 +9,7 @@ const topMenu = [
 ];
 
 const sin_info = {
+  id: "card1",
   name: "도깨비(김신), 939세",
   nameImage: "./images/name_sin.png",
   nameImage2: "./images/name2_sin.png",
@@ -23,6 +24,7 @@ const sin_info = {
 };
 
 const ji_info = {
+  id: "card2",
   name: "지은탁, 19세",
   nameImage: "./images/name_ji.png",
   nameImage2: "./images/name2_ji.png",
@@ -35,6 +37,7 @@ const ji_info = {
 };
 
 const ju_info = {
+  id: "card3",
   name: "저승사자, 30대 후반 추정",
   nameImage: "./images/name_ju.png",
   nameImage2: "./images/name2_ju.png",
@@ -49,6 +52,7 @@ const ju_info = {
 };
 
 const sun_info = {
+  id: "card4",
   name: "써니, 20대 중후반",
   nameImage: "./images/name_sun.png",
   nameImage2: "./images/name2_sun.png",

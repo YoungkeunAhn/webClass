@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <title>쓸쓸하고 찬란하신(神) 도깨비</title>
   </head>
   <body>
@@ -27,13 +32,13 @@
         <script>
           cardInfo.map((info) => {
             document.write(`
-          <div class="card">
+          <div class="card ${info.id}">
             <div class="thumbnail">
               <img class="thumbnail-image" src="${info.image}" alt="card image" />
-              <img id="thumbnailName" src="${info.nameImage2}" alt="thumbnail name image" />
+              <img class="thumbnailName" src="${info.nameImage2}" alt="thumbnail name image" />
             </div>
             <div class="text-part">
-              <h4>${info.name}</h4>
+              <h3>${info.name}</h3>
               <div>${info.text}</div>
             </div>
           </div>
@@ -61,4 +66,5 @@
       <img src="./images/blogo.png" alt="footer logo image" />
     </footer>
   </body>
+  <script src="./eventScript.js"></script>
 </html>
