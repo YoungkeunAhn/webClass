@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="globalStyle.css" />
+    <link rel="stylesheet" href="headerStyle.css" />
+    <link rel="stylesheet" href="mainStyle.css" />
+    <script src="script.js"></script>
+    <title>에스파 소개 페이지</title>
+  </head>
+  <body>
+    <header>
+      <div class="img-box" onclick="location.href='index.html'">
+        <img src="./images/logo.png" alt="logo image" />
+      </div>
+      <nav>
+        <ul>
+          <script>
+            menuList.map((menu, idx) =>
+              document.write(
+                `<li class="menu-item${idx}" onclick="location.href='${menu.url}'">${menu.name}</li>`
+              )
+            );
+          </script>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <ul class="content-list">
+          <script>
+            memberInfo.map((member) => {
+              document.write(`
+              
+              <li class="content-item ${member.enName}">
+                ${
+                  member.leader
+                    ? `<img
+                      class="leader-icon"
+                      src="./images/leader_icon.png"
+                      alt="leader icon image"
+                    />`
+                    : ""
+                }
+                <h4 class="name">${member.name}</h4>
+                <div class="info-box">
+                  <div class="image-part">
+                    <img src="./images/${
+                      member.images[0]
+                    }" alt="member image" />
+                    <img src="./images/${
+                      member.images[1]
+                    }" alt="member ai image" />
+                  </div>
+                  <div class="text-part">
+                    <p>
+                        <span>${member.name}</span>
+                        <span>${member.birth}</span>
+                    </p>
+                      ${member.content}
+                  </div>
+                </div>
+              </li>`);
+            });
+          </script>
+        </ul>
+        <!-- <li class="content-item ningning">
+            <h4 class="name">닝닝</h4>
+          </li>
+          <li class="content-item eiselle">
+            <div></div>
+            <h4 class="name">지젤</h4>
+          </li>
+          <li class="content-item winter">
+            <div></div>
+            <h4 class="name">윈터</h4>
+          </li>
+          <li class="content-item karina">
+            <img
+              class="leader-icon"
+              src="./images/leader_icon.png"
+              alt="leader icon image"
+            />
+            <h4 class="name">카리나</h4>
+            <div class="info-box">
+              <div class="image-part">
+                <img src="./images/karina.jpg" alt="" />
+                <img src="./images/karina_ai.png" alt="" />
+              </div>
+              <div class="text-part">
+                <script>
+                  document.write(
+                    `<p><span>${memberInfo[3].name}</span> ${memberInfo[3].birth}</p>${memberInfo[3].content}`
+                  );
+                </script>
+              </div>
+            </div>
+          </li> -->
+      </div>
+    </main>
+  </body>
+</html>
