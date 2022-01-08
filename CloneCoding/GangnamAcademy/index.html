@@ -115,7 +115,7 @@
               <script>
                 noticeInfo.map((info) =>
                   document.write(
-                    `<li class=".bbs-select-row"><span>${info.title}</span><span class="post-date">${info.day}</span></li>`
+                    `<li class="notice-bbs-select-row"><span>${info.title}</span><span class="post-date">${info.day}</span></li>`
                   )
                 );
               </script>
@@ -137,29 +137,16 @@
             </ul>
           </div>
         </div>
-        <div class="right-part"></div>
+        <div class="right-part">
+          <div id="introImageSlider"><span>소개 이미지 슬라이드</span></div>
+        </div>
       </section>
     </div>
 
-    <!-- 메뉴박스 이벤트 -->
-    <!-- <script>
-      const openCollapseBox = () => {
-        console.log("mouseover event");
-        document.getElementById("collapseBox").style.height = "200px";
-      };
-
-      const closeCollapseBox = () => {
-        console.log("mouseout event");
-        document.getElementById("collapseBox").style.height = 0;
-      };
-
-      const menuBox = document.querySelector(".menu-list");
-      const collapseBox = document.querySelector(".collapse");
-
-      menuBox.addEventListener("mouseover", openCollapseBox);
-      collapseBox.childNodes.addEventListener;
-      collapseBox.addEventListener("mouseout", closeCollapseBox);
-    </script> -->
+    <section class="consultation-section">
+      <div class="left-part"></div>
+      <div class="right-part"></div>
+    </section>
     <script src="eventScript.js"></script>
   </body>
 </html>

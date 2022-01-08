@@ -31,7 +31,7 @@
 .bbs-select-box ul li {
   text-align: left;
 }
-.bbs-select-box ul li::before {
+.notice-bbs-select-row::before {
   content: "· ";
 }
 

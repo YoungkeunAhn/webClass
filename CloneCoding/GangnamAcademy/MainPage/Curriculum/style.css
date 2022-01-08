@@ -1,0 +1,36 @@
+:root {
+  --step-title-color: #2c6ad1;
+}
+.stepBox {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stepBox-content {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stepBox-content img {
+  border: 2px solid var(--step-title-color);
+  border-radius: 50%;
+  background: #fff;
+  padding: 16px;
+}
+
+.stepBox label {
+  text-align: center;
+  color: var(--step-title-color);
+}
+
+.step01,
+.step04 {
+  float: left;
+}
+.step02,
+.step03,
+.step05 {
+  float: right;
+}
