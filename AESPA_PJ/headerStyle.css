@@ -1,0 +1,74 @@
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+}
+header .img-box {
+  width: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-box img {
+  width: 100%;
+}
+.img-box :hover {
+  cursor: pointer;
+}
+
+nav {
+  margin-left: 5vw;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: #fff;
+  font-size: 2.4rem;
+}
+nav ul li + li {
+  margin-left: 40px;
+}
+nav ul li {
+  transition: 0.3s;
+}
+nav ul li:hover {
+  cursor: url(./images/youtube_logo.png), pointer;
+  transform: scale(1.2);
+}
+li[class*="menu-item"] {
+  -webkit-background-clip: text;
+}
+.menu-item0:hover {
+  color: transparent;
+  background-color: #f9c5d1;
+  background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+}
+.menu-item1:hover {
+  color: transparent;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+}
+.menu-item2:hover {
+  color: transparent;
+  background-color: #ffc857;
+  background-image: linear-gradient(316deg, #ffc857 0%, #3e2f5b 74%);
+}
+.menu-item3:hover {
+  color: transparent;
+  background-color: #0beef9;
+  background-image: linear-gradient(315deg, #0beef9 0%, #48a9fe 74%);
+}
+.menu-item4:hover {
+  color: transparent;
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+}

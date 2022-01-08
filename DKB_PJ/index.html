@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <title>쓸쓸하고 찬란하신(神) 도깨비</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/tvnlogo2.png" alt="tvn logo image" />
+      <nav>
+        <!-- <ul>
+          <script>
+            topMenu.map((menu, idx) => {
+              document.write(
+                `<li class="top-menu-item menu${idx}"><span>${menu.title}</span>
+                  <ol class="drop-menu">
+                    <li><span>프로그램 소개</span></li>
+                    <li><span>인물소개</span></li>
+                    <li><span>인물관계도</span></li>
+                  </ol>
+                </li>`
+              );
+            });
+          </script>
+        </ul> -->
+        <ul>
+          <li>
+            <span href="#">프로그램 소개</span>
+            <!-- 서브메뉴 -->
+            <ol class="smenu">
+              <li>
+                <span href="#">프로그램 소개</span>
+              </li>
+              <li>
+                <span href="#">인물소개</span>
+              </li>
+              <li>
+                <span href="#">인물관계도</span>
+              </li>
+            </ol>
+          </li>
+          <li><span href="#">미리보기</span></li>
+          <li>
+            <span href="#">동영상</span>
+            <!-- 서브메뉴 -->
+            <ol class="smenu">
+              <li>
+                <span href="#">클립영상</span>
+              </li>
+              <li>
+                <span href="#">다시보기</span>
+              </li>
+              <li>
+                <span href="#">예고편</span>
+              </li>
+              <li>
+                <span href="#">스페셜</span>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <span href="#">사진첩</span>
+            <!-- 서브메뉴 -->
+            <ol class="smenu">
+              <li>
+                <span href="#">현장 포토</span>
+              </li>
+              <li>
+                <span href="#">대표 포스터</span>
+              </li>
+            </ol>
+          </li>
+          <li><span href="#">OST</span></li>
+          <li><span href="#">시청자 게시판</span></li>
+          <li><span href="#">[심리 테스트]</span></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="card-list-box">
+        <script>
+          cardInfo.map((info) => {
+            document.write(`
+          <div class="card ${info.id}">
+            <div class="thumbnail">
+              <img class="thumbnail-image" src="${info.image}" alt="card image" />
+              <img class="thumbnailName" src="${info.nameImage2}" alt="thumbnail name image" />
+            </div>
+            <div class="text-part">
+              <h3>${info.name}</h3>
+              <div>${info.text}</div>
+            </div>
+          </div>
+          `);
+          });
+        </script>
+      </div>
+    </main>
+    <footer>
+      <ul class="footer-menu">
+        <script>
+          footerMenu.map((menu) => {
+            document.write(`<li>${menu}</li>`);
+          });
+        </script>
+      </ul>
+      <ul class="address-box">
+        <li>(주)씨제이이엔엠 CJ ENM 대표이사 강호성, 허민호</li>
+        <li>
+          주소 (03926) 서울시 마포구 상암산로 66 사업자 등록번호 106-81-51510
+          개인정보보호책임자 김재환
+        </li>
+        <li>© CJ ENM. All Rights Reserved.</li>
+      </ul>
+      <img src="./images/blogo.png" alt="footer logo image" />
+    </footer>
+  </body>
+  <script src="./eventScript.js"></script>
+</html>
