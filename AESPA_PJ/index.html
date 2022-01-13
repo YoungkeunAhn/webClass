@@ -6,10 +6,16 @@
     <link rel="stylesheet" href="globalStyle.css" />
     <link rel="stylesheet" href="headerStyle.css" />
     <link rel="stylesheet" href="mainStyle.css" />
+    <link rel="stylesheet" href="mediaQueryStyle.css" />
     <script src="script.js"></script>
     <title>에스파 소개 페이지</title>
   </head>
   <body>
+    <div class="hamberger-icon-box">
+      <div class="hamberger-line"></div>
+      <div class="hamberger-line"></div>
+      <div class="hamberger-line"></div>
+    </div>
     <header>
       <div class="img-box" onclick="location.href='index.html'">
         <img src="./images/logo.png" alt="logo image" />
@@ -30,7 +36,7 @@
       <div class="container">
         <ul class="content-list">
           <script>
-            memberInfo.map((member) => {
+            memberInfo.reverse().map((member) => {
               document.write(`
               
               <li class="content-item ${member.enName}">
@@ -65,39 +71,25 @@
             });
           </script>
         </ul>
-        <!-- <li class="content-item ningning">
-            <h4 class="name">닝닝</h4>
-          </li>
-          <li class="content-item eiselle">
-            <div></div>
-            <h4 class="name">지젤</h4>
-          </li>
-          <li class="content-item winter">
-            <div></div>
-            <h4 class="name">윈터</h4>
-          </li>
-          <li class="content-item karina">
-            <img
-              class="leader-icon"
-              src="./images/leader_icon.png"
-              alt="leader icon image"
-            />
-            <h4 class="name">카리나</h4>
-            <div class="info-box">
-              <div class="image-part">
-                <img src="./images/karina.jpg" alt="" />
-                <img src="./images/karina_ai.png" alt="" />
-              </div>
-              <div class="text-part">
-                <script>
-                  document.write(
-                    `<p><span>${memberInfo[3].name}</span> ${memberInfo[3].birth}</p>${memberInfo[3].content}`
-                  );
-                </script>
-              </div>
-            </div>
-          </li> -->
       </div>
     </main>
+    <div class="pop-up-menu hidden">
+      <div class="left-bg">
+        <div class="img-box" onclick="location.href='index.html'">
+          <img src="./images/logo.png" alt="logo image" />
+        </div>
+        <ul>
+          <script>
+            menuList.map((menu, idx) =>
+              document.write(
+                `<li class="menu-item${idx}" onclick="location.href='${menu.url}'">${menu.name}</li>`
+              )
+            );
+          </script>
+        </ul>
+      </div>
+      <div class="right-bg"></div>
+    </div>
+    <script src="eventScript.js"></script>
   </body>
 </html>

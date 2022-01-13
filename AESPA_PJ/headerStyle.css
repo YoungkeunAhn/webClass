@@ -72,3 +72,16 @@ li[class*="menu-item"] {
   background-color: #f8ceec;
   background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 }
+.hamberger-icon-box {
+  width: 40px;
+  height: 30px;
+  display: none;
+  transition: 1s;
+}
+.hamberger-line {
+  border: 3px solid black;
+  background: black;
+  border-radius: 20px;
+
+  transition: 1s;
+}
