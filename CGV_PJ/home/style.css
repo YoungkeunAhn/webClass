@@ -1,0 +1,25 @@
+header {
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 100px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-right: 15vw;
+}
+
+header li + li {
+  margin-left: 32px;
+}
+
+.hoverPointer:hover {
+  cursor: pointer;
+}
