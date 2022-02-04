@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../globalStyle.css" />
     <link rel="stylesheet" href="./style.css" />
     <script src="./initialData.js"></script>
     <title>home</title>
   </head>
   <body>
+    <!-- header -->
     <header>
-      <img src="../public/logo.png" alt="로고 이미지" />
+      <img src="/public/logo.png" alt="로고 이미지" width="100px" />
       <ul>
         <script>
           menuItemList.map((menu) =>
@@ -21,7 +28,37 @@
       </ul>
     </header>
 
-    <main></main>
-    <footer></footer>
+    <!-- main -->
+    <main>
+      <div class="left">
+        <iframe
+          width="700"
+          height="500"
+          src="https://www.youtube.com/embed/wog1R1d4zls"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div class="profileBox">
+          <img src="/public/profile.jpg" alt="프로필 이미지" />
+          <div>
+            <label>에스파 팬페이지</label>
+            <span>드컴투</span>
+          </div>
+        </div>
+      </div>
+      <div class="right">오른쪽</div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <ul>
+        <li><i class="fab fa-facebook-square"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><img src="/public/v_live.png" alt="vlive 아이콘" /></li>
+      </ul>
+    </footer>
   </body>
 </html>
