@@ -1,0 +1,45 @@
+@media screen and (max-width: 970px) {
+  header ul {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .menuBar {
+    display: block;
+  }
+  main {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 82vh;
+  }
+  main iframe {
+    width: 100%;
+    height: 400px;
+  }
+  .right {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .right ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+  }
+  .right ul li {
+    width: 400px;
+  }
+  .right ul li + li {
+    margin-top: 0;
+    margin-left: 16px;
+  }
+
+  .right li:hover .infoBox {
+    transform: translateY(-205px);
+  }
+  .officeInfo {
+    display: none;
+  }
+}
