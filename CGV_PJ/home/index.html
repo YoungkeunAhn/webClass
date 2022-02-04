@@ -29,9 +29,11 @@
     </header>
 
     <!-- main -->
+
     <main>
       <div class="left">
         <iframe
+          id="MVIframe"
           width="700"
           height="500"
           src="https://www.youtube.com/embed/wog1R1d4zls"
@@ -44,21 +46,62 @@
           <img src="/public/profile.jpg" alt="프로필 이미지" />
           <div>
             <label>에스파 팬페이지</label>
-            <span>드컴투</span>
+            <span id="MVTitle">Forever</span
+            ><span id="MVSummary">
+              <script>
+                document.write(mvList[0].summary)
+              </script>
+            </span>
           </div>
         </div>
       </div>
-      <div class="right">오른쪽</div>
+      <div class="right">
+        <ul>
+          <script>
+            mvList.map((mv, idx) =>
+              document.write(`<li onclick="onClickThumbnail('${mv.url}', '${mv.summary}','${mv.title}')">
+                <img class='thumbnail'  src='../public/${mv.image}' alt='thumbnail image' />
+                <div class='infoBox'>
+                  <span class='title'>${mv.title}</span>
+                  <span>${mv.info}</span>
+                </div>
+              </li>`)
+            )
+          </script>
+        </ul>
+      </div>
     </main>
 
     <!-- footer -->
     <footer>
+      <p>
+        SM Entertainment 83-21, Wangsimni-ro, Seongdong-gu, Seoul, Republic of
+        Korea
+        <br />
+        TEL. 02-6240-9800 Lee Sung Su, Tak Young Jun
+        <br />
+        Copyright © 2016 SM Entertainment. All Rights Reserved.
+      </p>
       <ul>
-        <li><i class="fab fa-facebook-square"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
-        <li><i class="fab fa-twitter"></i></li>
-        <li><img src="/public/v_live.png" alt="vlive 아이콘" /></li>
+        <li><i class="fab fa-facebook-square"></i><span>Facebook</span></li>
+        <li><i class="fab fa-instagram"></i><span>Instagram</span></li>
+        <li><i class="fab fa-twitter"></i><span>Twitter</span></li>
+        <li>
+          <img src="/public/v_live.png" alt="vlive 아이콘" /><span>V LIVE</span>
+        </li>
       </ul>
     </footer>
   </body>
+  <script>
+    const mvFrame = document.getElementById("MVIframe")
+    const mvSummary = document.getElementById("MVSummary")
+    const mvTitle = document.getElementById("MVTitle")
+
+    const onClickThumbnail = (url, summary, title) => {
+      mvFrame.src = url
+      mvSummary.innerHTML = summary
+      mvTitle.innerHTML = title
+      // console.log(url, summary)
+    }
+  </script>
 </html>
