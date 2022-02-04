@@ -20,10 +20,12 @@
     height: 400px;
   }
   .right {
+    margin-left: 0;
     overflow-x: scroll;
     overflow-y: hidden;
   }
   .right ul {
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin-left: 0;
