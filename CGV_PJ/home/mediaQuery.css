@@ -35,6 +35,9 @@
     margin-top: 0;
     margin-left: 16px;
   }
+  .thumbnail {
+    object-fit: cover;
+  }
 
   .right li:hover .infoBox {
     transform: translateY(-205px);

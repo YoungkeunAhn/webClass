@@ -103,6 +103,7 @@
     const mvFrame = document.getElementById("MVIframe")
     const mvSummary = document.getElementById("MVSummary")
     const mvTitle = document.getElementById("MVTitle")
+    const menuBar = document.querySelector(".menuBar")
 
     const onClickThumbnail = (url, summary, title) => {
       mvFrame.src = url
@@ -110,5 +111,9 @@
       mvTitle.innerHTML = title
       // console.log(url, summary)
     }
+
+    menuBar.addEventListener("click", function () {
+      console.log("click")
+    })
   </script>
 </html>
